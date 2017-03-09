@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.immortal.ayaypaw">
+
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <service android:name="com.parse.PushService" />
+    <receiver android:name="com.parse.ParsePushBroadcastReceiver"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="com.parse.push.intent.RECEIVE" />
+            <action android:name="com.parse.push.intent.DELETE" />
+            <action android:name="com.parse.push.intent.OPEN" />
+        </intent-filter>
+    </receiver>
+    <receiver android:name="com.parse.GcmBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND">
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+            <!--
+              IMPORTANT: Change "com.parse.starter" to match your app's package name.
+            -->
+            <category android:name="com.immortal.ayaypaw.myapplication" />
+        </intent-filter>
+    </receiver>
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission android:protectionLevel="signature"
+        android:name="com.immortal.ayaypaw.permission.C2D_MESSAGE" />
+    <uses-permission android:name="ccom.immortal.ayaypaw.permission.C2D_MESSAGE" />
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".UpdateData.StarterApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/design_three"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/parse_client_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListCreate"
+            android:theme="@style/AppTheme"
+            android:label="Ayay Paw"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".ListCreateMain"
+            android:theme="@style/AppTheme"
+            android:label="Ayay Paw"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".TabActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".TabActivity">
+
+        </activity>
+        <activity
+            android:name=".SearchMain"
+            android:theme="@style/AppTheme"
+            android:label="႐ွာေဖြရန္"
+            android:parentActivityName=".ListCreate" />
+        <activity
+            android:name=".CareService"
+            android:theme="@style/AppTheme"
+            android:label="က်န္းမာေရး ၀န္ေဆာင္မႈမ်ား"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NearestCenters"
+            android:theme="@style/AppTheme"
+            android:label="အနီးဆံုးက်န္းမာေရး ၀န္ေဆာင္မႈမ်ား"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".BLTeamDetail"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".TabActivity" />
+        <activity
+            android:name=".ServiceType"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".CareService" />
+        <activity android:name=".About"/>
+
+
+        <activity
+            android:name=".Am"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="ေဆာ့ဖ္၀ဲလ္အေၾကာင္း သိေကာင္းစရာ"/>
+        <activity
+            android:name=".NearestLocation.LocationMainActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="အနီးဆံုး၀န္ေဆာင္မႈမ်ား"/>
+        <provider android:name="com.immortal.ayaypaw.NearestLocation.DataProvider"
+            android:authorities="com.immortal.ayaypaw.NearestLocation.dataprovider"
+            android:enabled="true"
+            android:exported="false" />
+
+
+    </application>
+
+
+
+</manifest>

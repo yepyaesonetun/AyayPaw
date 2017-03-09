@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/b_1"
+        rv_centered="true"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_village_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="ေက်း႐ြာအလိုက္ရွာေဖြရန္"
+            android:textColor="#fff" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/b_2"
+        rv_centered="true"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_helper_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="အသင္းအလိုက္႐ွာေဖြရန္"
+            android:textColor="#fff" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/b_3"
+        rv_centered="true"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_care_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="၀န္ေဆာင္မႈအလိုက္႐ွာေဖြရန္"
+            android:textColor="#fff" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/b_4"
+        rv_centered="true"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/button_nearest_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="အနီးဆံုး၀န္ေဆာင္မႈ"
+            android:textColor="#fff" />
+    </com.andexert.library.RippleView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e62117</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <!--<color name="colorAccent">#FFCDD2</color>-->
+    <color name="colorAccent">#e62117</color>
+    <color name="primaryPressed">#c0c0c0</color>
+    <color name="primaryFocused">#f0f0ff</color>
+        
+    <color name="ColorPrimary1">#e62117</color>
+        
+    <color name="ColorPrimaryDark1">#f44336</color>
+        
+
+    <color name="TSC">#ffff</color>
+
+    <color name="tabdid">#2E7D32</color>
+
+    <color name="showCaseBackground">#009688</color>
+    <color name="showCaseTintColor">#4db6ac</color>
+
+    <!--<color name="showCaseBackground">#f44336</color>-->
+    <!--<color name="showCaseTintColor">#ff8480</color>-->
+
+</resources>

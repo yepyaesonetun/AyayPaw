@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/button"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+
+    >
+
+    <!--<com.andexert.library.RippleView-->
+    <!--android:id="@+id/more"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+    <!--android:layout_margin="5dp"-->
+    <!--rv_centered="true">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="@drawable/button"-->
+    <!-->-->
+    <ImageView
+        android:id="@+id/imageView_main_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textView_main_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:minLines="3"
+        android:text="Villages..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#D32F2F" />
+</LinearLayout><!--</com.andexert.library.RippleView>-->
+
+    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"--><!--android:layout_margin="@dimen/text_margin" android:text="@string/large_text" />-->
+
+
+    <!--</LinearLayout>-->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_village" android:icon="@drawable/village_black_128"
+            android:title="ေက်း႐ြာမ်ား" />
+        <item android:id="@+id/nav_health_and_society" android:icon="@mipmap/helper_yellow"
+            android:title="လူမႈကူညီေရးအသင္းမ်ား" />
+        <item android:id="@+id/nav_healthy_care_service" android:icon="@mipmap/health_care"
+            android:title="က်န္းမာေရး ၀န္ေဆာင္မႈမ်ား" />
+        <item android:id="@+id/nav_nearest_care_center" android:icon="@mipmap/map_pointer"
+            android:title="အနီးဆံုးက်န္းမာေရး၀န္ေဆာင္မႈမ်ား" />
+        <item android:id="@+id/nav_search" android:icon="@drawable/search_png"
+            android:title="႐ွာေဖြရန္" />
+    </group>
+
+    <item android:title="News">
+        <menu>
+            <item android:id="@+id/nav_update" android:icon="@android:drawable/stat_notify_sync_noanim"
+                android:title="အခ်က္အလက္အသစ္ ရယူရန္"/>
+        </menu>
+    </item>
+
+    <item android:title="Communication">
+        <menu>
+
+            <item android:id="@+id/nav_about" android:icon="@android:drawable/ic_menu_info_details"
+                android:title="ေဆာ့ဖ္၀ဲလ္အေၾကာင္း" />
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_send"
+                android:title="Feedback SMS" />
+
+        </menu>
+    </item>
+
+</menu>
